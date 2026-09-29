@@ -7,7 +7,9 @@ This project will serve as my portfolio and this portfolio will be used even i'v
 
 ## Features
 -It have a unique logo where logo serves as my signature
+
 -soon enough i will add a feature button where it will  change demonstration portfolio into main portfolio
+
 -i will add also the achievement list, darkmode.
 
 ## How to run
