@@ -149,14 +149,46 @@ body {
   background-color: #fff;
   border-radius: 18px;
   padding: 28px;
-  box-shadow: 0 12px 30px rgba(17, 32, 51, 0.08);
+  box-shadow: 0 12px 30px rgba(3, 6, 10, 0.08);
   width: min(100%, 900px);
   align-items: center;
 }
 
+.achievement-text p,
 .about-box p {
   font-size: 20px;
   color: #5d785e;
+}
+
+.achievement-text h3 {
+  color: rgb(107, 6, 4);
+}
+
+.achievement-section {
+  background: linear-gradient(180deg, #fff1f1 0%, #ffffff 100%);
+  padding: 110px clamp(24px, calc((100vw - 980px) / 2), 150px) 90px;
+}
+
+.achievement-section h2 {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgb(107, 6, 4);
+  margin-top: 0;
+  margin-bottom: 18px;
+  padding: 0 0 8px;
+  border-bottom: 3px solid #b0710c;
+}
+
+.achievement-box {
+  background: #fff;
+  border: 1px solid #dfe8f3;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 12px 30px rgba(17, 32, 51, 0.08);
+  width: min(100%, 900px);
+  margin: 0 auto 50px;
 }
 
 .SkillSection,
