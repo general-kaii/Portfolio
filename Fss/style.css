@@ -160,6 +160,13 @@ body {
   color: #5d785e;
 }
 
+.achievement-section img {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
 .achievement-text h3 {
   color: rgb(107, 6, 4);
 }
@@ -187,7 +194,7 @@ body {
   border-radius: 18px;
   padding: 28px;
   box-shadow: 0 12px 30px rgba(17, 32, 51, 0.08);
-  width: min(100%, 900px);
+  width: 50%;
   margin: 0 auto 50px;
 }
 
