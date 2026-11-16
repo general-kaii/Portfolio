@@ -161,10 +161,11 @@ body {
 }
 
 .achievement-section img {
-  width: 450px;
-  height: 450px;
-  display: flex;
-  justify-content: center;
+  display: block;
+  width: min(100%, 280px);
+  height: auto;
+  margin: 16px auto 0;
+  object-fit: contain;
 }
 
 .achievement-text h3 {
@@ -194,7 +195,7 @@ body {
   border-radius: 18px;
   padding: 28px;
   box-shadow: 0 12px 30px rgba(17, 32, 51, 0.08);
-  width: 50%;
+  width: min(100%, 700px);
   margin: 0 auto 50px;
 }
 
@@ -278,7 +279,7 @@ body {
   color: #f4c866;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .header {
     height: auto;
     min-height: 70px;
@@ -331,7 +332,8 @@ body {
   }
 
   .description p,
-  .about-box p {
+  .about-box p,
+  .achievement-text p {
     font-size: clamp(1rem, 4vw, 1.125rem);
   }
 
@@ -339,7 +341,8 @@ body {
     margin-left: 0;
   }
 
-  .AboutMe {
+  .AboutMe,
+  .achievement-section {
     padding: 80px 24px;
   }
 
