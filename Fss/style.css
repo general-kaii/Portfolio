@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -37,7 +38,6 @@ body {
   display: flex;
   gap: 25px;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu a {
@@ -53,27 +53,30 @@ body {
 
 .Aaron {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
   background: linear-gradient(180deg, #ffffff 0%, #fff1f1 100%);
-  padding: 80px clamp(24px, calc((100vw - 980px) / 2), 150px) 0;
+  padding: 64px 24px 72px;
   margin: 0 auto;
 }
 
 .profile {
-  height: 260px;
-  width: 260px;
+  display: block;
+  height: 360px;
+  width: 360px;
   border-radius: 50%;
   border: 2px solid white;
+  object-fit: cover;
 }
 
 .Intro {
-  flex: 1;
+  width: min(100%, 850px);
   min-width: 0;
   color: #1c2431;
   line-height: 1.6;
+  text-align: center;
 }
 
 .in {
@@ -83,7 +86,8 @@ body {
   font-size: 15px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  width: 30%;
+  width: auto;
+  margin: 0 0 8px;
 }
 
 .Intro h1 {
@@ -108,21 +112,37 @@ body {
   font-size: 20px;
 }
 
-.Aaron .about-button {
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 50px;
+.Aaron .about-button,
+.Aaron .skill-button,
+.Aaron .contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  margin: 0;
   padding: 12px 20px;
   border: 2px solid white;
   border-radius: 6px;
   background: linear-gradient(180deg, #ffffff 0%, #fff1f1 100%);
   color: rgb(107, 6, 4);
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
 }
 
-.Aaron .about-button:hover {
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.Aaron .about-button:hover,
+.Aaron .skill-button:hover,
+.Aaron .contact-button:hover,
+.Aaron .about-button:focus-visible,
+.Aaron .skill-button:focus-visible,
+.Aaron .contact-button:focus-visible {
   background: linear-gradient(180deg, rgb(137, 24, 18) 0%, rgb(107, 6, 4) 100%);
   color: #f4c866;
 }
@@ -135,7 +155,6 @@ body {
 .AboutMe h4 {
   display: inline-block;
   font-size: 1.8rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: rgb(107, 6, 4);
   margin-top: 0;
@@ -180,7 +199,6 @@ body {
 .achievement-section h2 {
   display: inline-block;
   font-size: 1.8rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: rgb(107, 6, 4);
   margin-top: 0;
@@ -216,7 +234,6 @@ body {
 .ContactSection h4 {
   display: inline-block;
   font-size: 1.8rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   color: rgb(107, 6, 4);
   margin-top: 0;
@@ -243,10 +260,8 @@ body {
 .skill-card h5 {
   margin: 0 0 12px;
   color: rgb(107, 6, 4);
-  font:
-    700 1.2rem Arial,
-    Helvetica,
-    sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .skill-card p,
@@ -269,7 +284,6 @@ body {
   border-radius: 6px;
   background: linear-gradient(180deg, #ffffff 0%, #fff1f1 100%);
   color: rgb(107, 6, 4);
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   text-decoration: none;
 }
@@ -300,8 +314,6 @@ body {
   }
 
   .Aaron {
-    flex-direction: column;
-    gap: 24px;
     padding: 48px 24px 64px;
   }
 
@@ -337,10 +349,6 @@ body {
     font-size: clamp(1rem, 4vw, 1.125rem);
   }
 
-  .Aaron .about-button {
-    margin-left: 0;
-  }
-
   .AboutMe,
   .achievement-section {
     padding: 80px 24px;
@@ -366,7 +374,6 @@ body {
   }
 }
 
-
 /* ===== Intro animation ===== */
 body.intro-lock {
   overflow: hidden;
@@ -387,7 +394,7 @@ body.intro-lock {
 
 .intro-name {
   display: flex;
-  font-family: "Press Start 2P", monospace;
+  font-family: inherit;
   font-size: clamp(1.4rem, 7vw, 3rem);
   color: rgb(107, 6, 4);
   letter-spacing: 2px;
@@ -411,7 +418,6 @@ body.intro-lock {
 .intro-sub {
   margin: 0;
   opacity: 0;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
