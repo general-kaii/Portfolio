@@ -13,7 +13,6 @@ img {
   max-width: 100%;
 }
 
-/* HEADER */
 .Header {
   position: sticky;
   top: 0;
@@ -52,7 +51,6 @@ img {
   color: rgb(154, 20, 20);
 }
 
-/* PAGE SWITCHING (no JavaScript) */
 .view {
   display: none;
   animation: fadeIn 0.4s ease;
@@ -83,7 +81,6 @@ main:has(#contact:target) #home {
   }
 }
 
-/* BANNER */
 .banner {
   height: 250px;
   background-color: #3a0610;
@@ -97,7 +94,6 @@ main:has(#contact:target) #home {
   display: block;
 }
 
-/* INTRO */
 .intro {
   display: flex;
   align-items: flex-start;
@@ -131,7 +127,6 @@ main:has(#contact:target) #home {
   margin: 0;
 }
 
-/* QUOTE */
 .quote {
   text-align: center;
   padding: 40px clamp(20px, 6vw, 80px);
@@ -143,7 +138,6 @@ main:has(#contact:target) #home {
   font-style: italic;
 }
 
-/* ABOUT ME and SKILL */
 .about {
   max-width: 900px;
   margin: 0 auto;
@@ -158,7 +152,6 @@ main:has(#contact:target) #home {
   color: #3a0610;
 }
 
-/* small red line under each title */
 .about h2::after {
   content: "";
   display: block;
@@ -183,7 +176,6 @@ main:has(#contact:target) #home {
   margin: 18px 0;
 }
 
-/* PROGRAMMING MASTERY */
 .skill-row {
   margin: 25px 0;
 }
@@ -217,7 +209,6 @@ main:has(#contact:target) #home {
   width: 75%;
 }
 
-/* PROJECTS */
 .projects-section {
   max-width: 1100px;
   padding-bottom: 70px;
@@ -292,7 +283,6 @@ main:has(#contact:target) #home {
   color: white;
 }
 
-/* CONTACT */
 .contact-card {
   text-align: center;
   padding: 20px 30px 35px;
@@ -321,9 +311,6 @@ main:has(#contact:target) #home {
   transform: translateY(-3px);
 }
 
-/* ========== RESPONSIVE ========== */
-
-/* TABLET */
 @media (max-width: 1024px) {
   .profile {
     width: 220px;
@@ -336,7 +323,6 @@ main:has(#contact:target) #home {
   }
 }
 
-/* PHONE (big) */
 @media (max-width: 800px) {
   html {
     scroll-padding-top: 130px;
@@ -392,7 +378,6 @@ main:has(#contact:target) #home {
   }
 }
 
-/* PHONE (small) */
 @media (max-width: 480px) {
   .banner {
     height: 150px;
