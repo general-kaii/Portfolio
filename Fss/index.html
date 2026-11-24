@@ -3,110 +3,199 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&family=Press+Start+2P&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
   </head>
-  <body class="intro-lock">
-    <div class="intro-screen" id="intro">
-      <div class="intro-name" id="introName" aria-label="AARON"></div>
-      <div class="intro-line"></div>
-      <p class="intro-sub">Portfolio</p>
-    </div>
 
-    <header class="header">
+  <body>
+    <header class="Header">
       <div class="logo">AARON</div>
       <nav class="menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#achievements">Achievement</a>
-        <a href="#skill">Skill</a>
-        <a href="#contact">Contact</a>
+        <a href="#home">HOME</a>
+        <a href="#aboutme">ABOUT ME</a>
+        <a href="#skill">SKILL</a>
+        <a href="#contact">CONTACT</a>
       </nav>
     </header>
 
     <main>
-      <section id="home" class="Aaron">
-        <img src="./images/profile.jpg" alt="" class="profile" />
-        <div class="Intro">
-          <p class="in">Hello, I am</p>
-          <h1>AARON ALINEA</h1>
-          <div class="home-actions">
-            <a class="about-button" href="#about">About Me</a>
-            <a class="about-button" href="#achievements">View Achievements</a>
-            <a class="skill-button" href="#skill">View Skills</a>
-            <a class="contact-button" href="#contact">Contact Me</a>
+      <!-- HOME -->
+      <div id="home" class="view">
+        <section class="banner">
+          <img src="./images/tiger.jpg" class="tiger" alt="tiger" />
+        </section>
+
+        <section class="intro">
+          <img src="./images/profile.jpg" class="profile" alt="profile" />
+          <div class="text">
+            <h1>HI, I AM AARON</h1>
+            <p>YOU CANNOT REASON WITH A TIGER WHEN YOUR HEAD IS IN ITS MOUTH</p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="about" class="AboutMe">
-        <h4>About Me</h4>
-        <div class="about-box">
-          <p>
-            I am studying Computer Science at Catanduanes State University. In
-            my free time, I enjoy playing online games, reading manhwa and
-            watching anime.<br />
-            <br />
-            I'm a second year student taking Bachelor in Science in Computer
-            Science at Catanduanes State University.
-          </p>
-        </div>
-      </section>
+        <section class="quote">
+          <blockquote>
+            TALK IS CHEAP. SHOW ME THE CODE -LINUS TORVALDS
+          </blockquote>
+        </section>
+      </div>
 
-      <section id="achievements" class="achievement-section">
-        <h2>Achievement</h2>
-        <div class="achievement-box">
-          <div class="achievement-text">
-            <h3>NC 2</h3>
+      <!-- ABOUT ME -->
+      <div id="aboutme" class="view">
+        <section class="about">
+          <h2>ABOUT ME</h2>
+          <div class="about-card">
             <p>
-              I achieved this certificate during the assessment at san miguel,
-              catanduanes on march 24, 2025.
-              <img src="images/nc.png" alt="NC II" />
+              Hi, I am Aaron C. Alinea a second year Computer Science student. I
+              am from Barangay Toytoy, Caramoran, Catanduanes.
+            </p>
+            <p>
+              In my freetime I like to play online games, watch anime, and
+              listen to music. I also like to play badminton. I am a very
+              friendly person and I like to meet new people. I want to explore
+              the world and learn new things. I want to be a successful person
+              in the future and so I can help my family.
             </p>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <section id="skill" class="SkillSection">
-        <h4>My Skills</h4>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h5>E-Sports</h5>
+      <!-- SKILL -->
+      <div id="skill" class="view">
+        <section class="about">
+          <h2>WHAT CAN I DO</h2>
+          <div class="about-card">
             <p>
-              Malakas pa sa malakas <br />
-              Halimaw pa sa halimaw
+              I can make you, your own website for your business or personal
+              use.
+            </p>
+            <p>
+              I can also make you a system that can help you to manage your
+              business or personal use.
+            </p>
+            <p>
+              I already build a system, which is an inventory system that can
+              help a farmer to track their harvest yearly.
             </p>
           </div>
-          <div class="skill-card">
-            <h5>PRITO</h5>
-            <p>Magaling mag prito lalo na kapag hotdog</p>
-          </div>
-          <div class="skill-card">
-            <h5>Specialty</h5>
-            <p>.....</p>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="contact" class="ContactSection">
-        <h4>Contact</h4>
-        <div class="contact-box">
-          <p>message me here</p>
-          <a
-            class="contact-button"
-            href="https://web.facebook.com/emp.kai"
-            target="_blank"
-            >Visit my Facebook</a
-          >
-        </div>
-      </section>
+        <section class="about">
+          <h2>PROGRAMMING MASTERY</h2>
+          <div class="about-card">
+            <div class="skill-row">
+              <div class="skill-top">
+                <span>HTML</span>
+                <span>50%</span>
+              </div>
+              <div class="bar"><div class="fill p50"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-top">
+                <span>CSS</span>
+                <span>50%</span>
+              </div>
+              <div class="bar"><div class="fill p50"></div></div>
+            </div>
+
+            <div class="skill-row">
+              <div class="skill-top">
+                <span>C++</span>
+                <span>75%</span>
+              </div>
+              <div class="bar"><div class="fill p75"></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about projects-section">
+          <h2>MY PROJECTS</h2>
+          <div class="projects">
+            <div class="project-card">
+              <div class="project-img">
+                <img src="./images/portfolio.jpg" alt="Project 1" />
+              </div>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/general-kaii/Portfolio"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/general-kaii"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline"
+                  >Visit GitHub</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-img">
+                <img src="./images/inventory.jpg" alt="Project 3" />
+              </div>
+              <div class="project-buttons">
+                <a
+                  href="https://github.com/general-kaii/oop"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn"
+                  >View Project</a
+                >
+                <a
+                  href="https://github.com/general-kaii"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline"
+                  >Visit GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- CONTACT -->
+      <div id="contact" class="view">
+        <section class="about">
+          <h2>CONTACT ME</h2>
+          <div class="about-card contact-card">
+            <p>
+              Want a website or a system for your business? Message me on
+              Facebook.
+            </p>
+            <a
+              href="https://www.facebook.com/emp.kai"
+              target="_blank"
+              rel="noopener"
+              class="contact-btn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="22"
+                height="22"
+                fill="currentColor"
+              >
+                <path
+                  d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.3-1.6 1.7-1.6h1.7V3.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4v3.3h2.8V22h3.3z"
+                />
+              </svg>
+              Message me on Facebook
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>
