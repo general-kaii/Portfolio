@@ -164,7 +164,7 @@ main:has(#contact:target) #home {
 
 .about-card {
   background: #fafafb;
-  border-left: 6px solid #9a1414;
+  border: 6px solid #9a1414;
   border-radius: 12px;
   padding: 10px 30px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
